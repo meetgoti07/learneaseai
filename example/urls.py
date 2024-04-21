@@ -1,9 +1,9 @@
 # example/urls.py
 from django.urls import path
 
-from example.views import index
+from example.views import transcript_view
 
 
 urlpatterns = [
-    path('', index),
+    path('transcript/', transcript_view, name='transcript_view')
 ]
